@@ -7,7 +7,7 @@ var app = express();
 
 // Définition de l'hôte et du port
 var host        = process.env.VCAP_APP_HOST || process.env.HOST || 'localhost';
-var port        = process.env.VCAP_APP_PORT || process.env.PORT || 8080;
+var port        = process.env.VCAP_APP_PORT || process.env.PORT || 8081;
 
 /* On utilise les sessions */
 app.use(session({secret: 'todotopsecret'}))
