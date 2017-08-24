@@ -4,6 +4,10 @@
     <head>
         <title>Ma todolist</title>
         <style>
+            #mon_bloc{
+                margin-left: auto;
+                margin-right: auto;
+                }
             body{background-color: gray;}
             a {text-decoration: none; color: black;}
         </style>
@@ -11,7 +15,7 @@
 
     <body>
         <h1>Ma todolist</h1>
-
+        <div id="mon_bloc">
         <ul>
         <% todolist.forEach(function(todo, index) { %>
             <li><a href="/todo/supprimer/<%= index %>">✘</a> <%= todo %></li>
@@ -25,5 +29,6 @@
                 <input type="submit" />
             </p>
         </form>
+        </div>
     </body>
 </html>
